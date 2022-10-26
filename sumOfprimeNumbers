@@ -1,0 +1,32 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// Өгсөн AB 2 тооны хоорондох төгс тооны нийлбэрийг ол
+		int A = 20;
+		int B = 30;
+		int sum = 0;
+		
+		for (int i = A; i<B; i++){
+			
+			int flag = 1;
+			for (int j = 2; j < A; j++){
+				if (i % j == 0){
+					flag = 0;
+				}
+			}
+			if(flag == 1){
+				sum = sum + i;
+			}
+		}
+		
+		System.out.println("Sum is : " + sum);
+	}
+}
