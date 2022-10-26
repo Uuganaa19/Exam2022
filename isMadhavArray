@@ -10,9 +10,9 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		int isMadhav[] = new int[]{6,2,4,2,2,2,1,5,0,1};
+		int isMadhav[] = new int[]{6,2,4,2,2,2,1,5,0,0};
 		int index = 1;
-		int flag = 0;
+		int flag = 1;
 		
 		for (int i = 2; index < isMadhav.length; i ++){
 			int sum = 0;
@@ -20,10 +20,10 @@ class Ideone
 				sum = sum + isMadhav[index];
 				index++;
 			}
-			flag=0;
-			if(isMadhav[0] == sum){
+			
+			if(isMadhav[0] != sum){
 				System.out.println("Madhav : " + sum);
-				flag=1;
+				flag=0;
 			}
 			
 		}
